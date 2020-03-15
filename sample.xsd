@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Products" type="ProductsType"/>
+  <xs:complexType name="productType">
+    <xs:sequence>
+      <xs:element name="Name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="DJI - Mavic Mini Fly More Combo Quadcopter with Remote Controller - Gray"/>
+            <xs:enumeration value="DJI - Mavic 2 Pro Quadcopter with Remote Controller - Gray"/>
+            <xs:enumeration value="Ryze Tech - Tello Boost Combo Quadcopter - White And Black"/>
+            <xs:enumeration value="DJI - Mavic Pro Platinum Quadcopter Fly More Combo - Platinum"/>
+            <xs:enumeration value="DJI - Mavic Air Fly More Combo Quadcopter with Remote Controller - Onyx Black"/>
+            <xs:enumeration value="DJI - Mavic 2 Zoom Quadcopter with Remote Controller"/>
+            <xs:enumeration value="DJI - Mavic Air Fly More Combo Quadcopter with Remote Controller - Arctic White"/>
+            <xs:enumeration value="DJI - Mavic Mini Quadcopter with Remote Controller - Gray"/>
+            <xs:enumeration value="Parrot - ANAFI Work Drone with Skycontroller - Dark Gray"/>
+            <xs:enumeration value="Parrot - ANAFI 4K Quadcopter with Remote Controller - Black"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Link">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="/site/dji-mavic-mini-fly-more-combo-quadcopter-with-remote-controller-gray/6383454.p?skuId=6383454"/>
+            <xs:enumeration value="/site/dji-mavic-2-pro-quadcopter-with-remote-controller-gray/6262620.p?skuId=6262620"/>
+            <xs:enumeration value="/site/ryze-tech-tello-boost-combo-quadcopter-white-and-black/6289119.p?skuId=6289119"/>
+            <xs:enumeration value="/site/dji-mavic-pro-platinum-quadcopter-fly-more-combo-platinum/6122225.p?skuId=6122225"/>
+            <xs:enumeration value="/site/dji-mavic-air-fly-more-combo-quadcopter-with-remote-controller-onyx-black/6194017.p?skuId=6194017"/>
+            <xs:enumeration value="/site/dji-mavic-2-zoom-quadcopter-with-remote-controller/6262621.p?skuId=6262621"/>
+            <xs:enumeration value="/site/dji-mavic-air-fly-more-combo-quadcopter-with-remote-controller-arctic-white/6194015.p?skuId=6194015"/>
+            <xs:enumeration value="/site/dji-mavic-mini-quadcopter-with-remote-controller-gray/6383451.p?skuId=6383451"/>
+            <xs:enumeration value="/site/parrot-anafi-work-drone-with-skycontroller-dark-gray/6350399.p?skuId=6350399"/>
+            <xs:enumeration value="/site/parrot-anafi-4k-quadcopter-with-remote-controller-black/6251616.p?skuId=6251616"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Rating">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Rating, 4.6 out of 5 with 389 reviews"/>
+            <xs:enumeration value="Rating, 4.9 out of 5 with 583 reviews"/>
+            <xs:enumeration value="Rating, 4.4 out of 5 with 454 reviews"/>
+            <xs:enumeration value="Rating, 4.7 out of 5 with 197 reviews"/>
+            <xs:enumeration value="Rating, 4.8 out of 5 with 809 reviews"/>
+            <xs:enumeration value="Rating, 4.8 out of 5 with 273 reviews"/>
+            <xs:enumeration value="Rating, 4.3 out of 5 with 50 reviews"/>
+            <xs:enumeration value="Not yet reviewed"/>
+            <xs:enumeration value="Rating, 4.2 out of 5 with 135 reviews"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Price">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="$499.99"/>
+            <xs:enumeration value="$1,599.99"/>
+            <xs:enumeration value="$149.99"/>
+            <xs:enumeration value="$1,299.99"/>
+            <xs:enumeration value="$1,149.99"/>
+            <xs:enumeration value="$1,349.99"/>
+            <xs:enumeration value="$399.99"/>
+            <xs:enumeration value="$999.99"/>
+            <xs:enumeration value="$699.99"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductsType">
+    <xs:sequence>
+      <xs:element type="productType" name="product" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
